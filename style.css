@@ -24,16 +24,18 @@
   
   main {
     min-height: 65vh;
-    padding: 1rem;
+    padding:20px;
     display: flex;
-    background: url("./manyminions.jpg") center center/cover;
-    filter: grayscale(40%);
+    background: url("./minions.jpg");
+    background-size: contain;
+    
+ 
   }
   
   main button {
     align-self: center;
-    margin: 1rem;
-    padding: 1rem;
+    margin:20px;
+    padding:20px;
     width: 10%;
     background-color: #e9c46a;
     color: #000;
@@ -44,37 +46,31 @@
     cursor: pointer;
   }
   
-  .output__container {
-    background-color: #ffffe5;
+  .resultContainer {
+    background-color: #fafa3a;
   }
-  /* 
-  textarea {
-    background-color: rgba(255, 255, 255, 0.6);
-  } */
+
+
   
-  .output__container {
-    background-color: #fff;
+  .inputContainer textarea {
+    padding:20px;
   }
   
-  .input__container textarea {
-    padding: 1rem;
-  }
-  
-  .output__container {
+  .resultContainer {
     height: 421px;
     width: 676px;
     border: 1px solid #000;
-    padding: 1rem;
+    padding:20px;
   }
   
   footer {
     min-height: 20vh;
     background-color: #e9c46a;
-    padding: 1rem;
+    padding:20px;
     text-align: center;
   }
   
   footer p {
-    padding-top: 1rem;
+    padding-top:20px;
   }
   
