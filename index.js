@@ -1,25 +1,25 @@
-const translatorBtn = document.getElementById("btn");
+const translateBtn = document.getElementById("translateBtn");
 
-translatorBtn.addEventListener("click", handleBtnClick);
+translateBtn.addEventListener("click", handleBtnClick);
 
-const inputContainer = document.getElementById("textArea");
-const outputContainer = document.querySelector("#outputBox");
+const inputContainer = document.getElementById("inputTextArea");
+const outputContainer = document.querySelector("#result");
 
 const url = "https://api.funtranslations.com/translate/minion.json";
 
 function handleBtnClick(event) {
-  const input = inputContainer.value;
-  const finalURL = constructURL(input);
-  console.log(finalURL);
-  fetch(finalURL)
-    .then(response => response.json())
-    .then(json => {
+  const inputText = inputContainer.value;
+  const urlGenerated = urlGenerator(inputText);
+  console.log(urlGenerated);
+  fetch(urlGenerated)
+    .then((response) => response.json())
+    .then((json) => {
       outputContainer.innerText = json.contents.translated;
     })
-    .catch(err => alert(err));
+    .catch((err) => alert(err.message));
 }
 
-function constructURL(inputText) {
-  const encodedURI = encodeURI(inputText);
-  return `${url}?text=${encodedURI}`;
+function urlGenerator(inputText) {
+  const uri = encodeURI(inputText);
+  return `${url}?text=${uri}`;
 }
