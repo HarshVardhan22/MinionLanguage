@@ -1,79 +1,82 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #f5d85f;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  min-height: 15vh;
+
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  min-height: 65vh;
+  padding: 20px;
+  display: flex;
   
-  html,
-  body {
-    background-color: #e9c46a;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  header {
-    min-height: 15vh;
-    background-color: #e9c46a;
-    position: relative;
-  }
-  
-  h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  main {
-    min-height: 65vh;
-    padding:20px;
-    display: flex;
-    background: url("./minions.jpg");
-    background-size: contain;
-    
  
-  }
-  
-  main button {
-    align-self: center;
-    margin:20px;
-    padding:20px;
-    width: 10%;
-    background-color: #fafa3a;
-    color: #000;
-    font-weight: 500;
-    border: 1px black solid;
-    border-radius: 3px;
-  
-    cursor: pointer;
-  }
-  
-  .resultContainer {
-    background-color: #fafa3a;
-    opacity: 0.9;
-  }
+}
 
+main button {
+  align-self: center;
+  margin: 20px;
+  padding: 20px;
+  width: 10%;
 
-  
-  .inputContainer textarea {
-    opacity: 0.9;
-    padding:20px;
-  }
-  
-  .resultContainer {
-    height: 58vh;
-    width: 60vw;
-    border: 1px solid #000;
-    padding:20px;
-  }
-  
-  footer {
-    min-height: 20vh;
-    background-color: #e9c46a;
-    padding:20px;
-    text-align: center;
-  }
-  
-  footer p {
-    padding-top:20px;
-  }
-  
+  color: #000;
+  font-weight: 500;
+  border-radius: 4px;
+  background: #f5d85f;
+  box-shadow: 9px 9px 18px #7d6e30, -9px -9px 18px #ffff8e;
+
+  cursor: pointer;
+}
+
+.resultContainer {
+  background-color: #fafa3a;
+  opacity: 0.9;
+}
+
+.inputContainer textarea {
+  border: none;
+  opacity: 0.9;
+  padding: 20px;
+  border-radius: 4px;
+  background: #f5d85f;
+  box-shadow: 9px 9px 18px #7d6e30, -9px -9px 18px #ffff8e;
+}
+
+.resultContainer {
+  height: 58vh;
+  width: 60vw;
+  border-radius: 4px;
+  background: #f5d85f;
+  box-shadow:  9px 9px 18px #7d6e30,
+               -9px -9px 18px #ffff8e;
+  padding: 20px;
+}
+
+footer {
+  min-height: 20vh;
+  background-color: #f5d85f;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  padding-top: 20px;
+}
